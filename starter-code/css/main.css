@@ -1,98 +1,78 @@
-/*
-Colors to use:
-dark blue: #06365f
-light blue: #1c5380
-*/
-
 body {
-	font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin: 0;
+  background: #fff url("../images/bgtile.png") repeat-x;
+  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
-header{
-	background-image: url(../images/bgtile.png);
-	background-repeat: repeat-x;
-	height: 20vw;
+main {
+  width: 900px;
+  margin: 90px auto 0;
 }
 
-h1{
-	color: #06365f;
-	padding-left: 3vw;
-	padding-right: 3vw;
+main section.section-left {
+  float: left;
 }
 
-p {
-	padding-left: 3vw;
-	padding-right: 3vw;
+main section.section-right {
+  float: right;
+  width: 500px;
 }
 
-button{
-	background-position: left;
-	background-repeat: no-repeat;
-	width: 7vw;
-	height: 3vw;
-	border-color: #06365f;
-	color: #d3d3d3; 
-	font-weight: bold;
-	padding-left: 1.6vw;
-	border-radius: 5px;
-	color: #d3d3d3; 
-
-background: rgba(28,83,128,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(28,83,128,1) 0%, rgba(28,83,128,1) 1%, rgba(6,53,95,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(28,83,128,1)), color-stop(1%, rgba(28,83,128,1)), color-stop(100%, rgba(6,53,95,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(28,83,128,1) 0%, rgba(28,83,128,1) 1%, rgba(6,53,95,1) 100%);
-background: -o-radial-gradient(center, ellipse cover, rgba(28,83,128,1) 0%, rgba(28,83,128,1) 1%, rgba(6,53,95,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(28,83,128,1) 0%, rgba(28,83,128,1) 1%, rgba(6,53,95,1) 100%);
-background: radial-gradient(ellipse at center, rgba(28,83,128,1) 0%, rgba(28,83,128,1) 1%, rgba(6,53,95,1) 100%);
+main section.section-right nav button.home {
+  float: right;
+  margin-top: 20px;
+  background: linear-gradient(#6c90ad, #4a7598);
+  border: 1px solid #1c5380;
+  border-radius: 2px;
+  padding: 5px 7px;
+  color: white;
 }
 
-footer{
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	margin-top: 5vw;
-	color: #1c5380;
-	font-weight: bold;
-	font-size: 1vw;
-    text-transform: uppercase;
+main section.section-right nav button.home img {
+  padding-top: 3px;
 }
 
-.image-phones {
-	margin-top: 7vw;
-	margin-left: 7vw;
-	float: left;
+main section.section-right nav button.home span {
+  margin-left: 5px;
+  position: relative;
+  bottom: 5px;
+  font-size: 15px;
 }
 
-.badges{
-	margin-top: 2vw;
-	margin-left: 7vw;
+main section.section-right article {
+  background: url("../images/frame.png") no-repeat;
+  padding: 40px;
 }
 
-.brand{
-	display: inline-block;
-	position: absolute;
-	margin-top: -12%;
-	margin-left: 15%;
+main section.section-right article h1 {
+  color: #06365f;
+  font-size: 27px;
+  margin-top: 0;
+  line-height: 1.3;
 }
 
-.log{
-	display: inline-block;
-	position: absolute;
-	margin-top: -10.5%;
-	margin-left: 50%;
+footer ul {
+  clear: both;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
 }
 
-.content-text {
-	background-image: url(../images/frame.png);
-	background-size: cover;
-	margin-top: -5vw;
-	padding: 1vw;
-	display: inline-block;
-	margin-left: 15%;
-	height: 20vw;
-	width: 40vw;
+footer ul li {
+  color: #999;
+  display: inline;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0 10px;
+  text-transform: uppercase;
 }
-.copyright {
-    color: silver;
+
+footer ul li a {
+  color: #1c5380;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
 }
